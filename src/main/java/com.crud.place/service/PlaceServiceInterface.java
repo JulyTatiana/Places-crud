@@ -8,7 +8,7 @@ public interface PlaceServiceInterface {
 
     List<Place> getAllPlaces();
 
-    Place savePlace(Place book);
+    Place savePlace(Place place);
 
     Place updatePlace(Place place);
 
