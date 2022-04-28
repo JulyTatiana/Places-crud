@@ -19,13 +19,13 @@ public class PlaceController {
         return service.getAllPlaces();
     }
 
-    @PostMapping("save/book")
+    @PostMapping("save/place")
     public Place savePlace(@RequestBody Place place){
         return service.savePlace(place);
     }
 
     @PutMapping("update/place")
-    public Place updateBook(@RequestBody Place place){
+    public Place updatePlace(@RequestBody Place place){
         return service.updatePlace(place);
     }
 
