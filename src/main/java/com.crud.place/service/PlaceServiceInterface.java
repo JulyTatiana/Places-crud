@@ -1,19 +1,18 @@
 package com.crud.place.service;
 
-import com.crud.crudplace.entity.Book;
 import com.crud.place.entity.Place;
 
 import java.util.List;
 
 public interface PlaceServiceInterface {
 
-    List<Place> getAllBooks();
+    List<Place> getAllPlaces();
 
-    Place saveBook(Place book);
+    Place savePlace(Place place);
 
-    Place updateBook(Place book);
+    Place updatePlace(Place place);
 
-    Place saveBook(Place book);
+    Place savePlace(Place place);
 
-    void deleteBook(Long id);
+    void deletePlace(Long id);
 }
