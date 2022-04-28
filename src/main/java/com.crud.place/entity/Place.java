@@ -4,8 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity(name = "Book")
-@Table(name = "book")
+@Entity(name = "Place")
+@Table(name = "place")
 @Data
 public class Place {
 
@@ -13,9 +13,9 @@ public class Place {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String title;
+    private String name;
 
-    private String author;
+    private String country;
 
-    private Integer numberPages;
+    private Integer population;
 }
