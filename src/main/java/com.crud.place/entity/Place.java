@@ -1,0 +1,21 @@
+package com.crud.place.entity;
+
+import lombok.Data;
+
+import javax.persistence.*;
+
+@Entity(name = "Book")
+@Table(name = "book")
+@Data
+public class Place {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private String title;
+
+    private String author;
+
+    private Integer numberPages;
+}
